@@ -1,0 +1,19 @@
+- label: Paper Submission Deadline
+  value: To be announced
+  state: pending
+
+- label: Notifications Sent to Authors
+  value: To be announced
+  state: pending
+
+- label: AAAI-27 Early Registration Deadline
+  value: To be announced
+  state: pending
+
+- label: Camera Ready Deadline for Submitted Papers
+  value: To be announced
+  state: pending
+
+- label: Workshop Date
+  value: To be announced
+  state: pending

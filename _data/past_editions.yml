@@ -1,0 +1,34 @@
+- year: "2026"
+  edition: 7th workshop
+  context: AAAI-26
+  url: "https://mapf-workshop.github.io/aaai26/"
+
+- year: "2025"
+  edition: 6th workshop
+  context: AAAI-25
+  url: "https://womapf.github.io/aaai-25/"
+
+- year: "2023"
+  edition: 5th workshop
+  context: AAAI-23
+  url: "https://idm-lab.org/wiki/AAAI23-MAPF/"
+
+- year: "2020"
+  edition: 4th workshop
+  context: IJCAI-20
+  url: "http://idm-lab.org/wiki/IJCAI20-MAPF/"
+
+- year: "2019"
+  edition: 3rd workshop
+  context: IJCAI-19
+  url: "https://idm-lab.org/wiki/IJCAI19-MAPF/index.php/Main/HomePage"
+
+- year: "2016"
+  edition: 2nd workshop
+  context: IJCAI-16
+  url: "https://web.archive.org/web/20220126174722/https://www.andrew.cmu.edu/user/gswagner/workshop/ijcai_2016_multirobot_path_finding.html"
+
+- year: "2012"
+  edition: 1st workshop
+  context: AAAI-12
+  url: "https://movingai.com/mapf/"

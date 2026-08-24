@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="{{ site.lang | default: 'en' }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#102d3b">
+    {% seo %}
+    <link rel="icon" type="image/png" sizes="128x128" href="{{ '/assets/img/favicon.png' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header">
+      <div class="shell site-header__inner">
+        <a class="brand" href="{{ '/' | relative_url }}" aria-label="WoMAPF 2027 home">
+          <span class="brand__mark" aria-hidden="true"></span>
+          <span class="brand__text">WoMAPF <strong>2027</strong></span>
+        </a>
+
+        <nav class="primary-nav" aria-label="Primary navigation">
+          {% for item in site.data.navigation %}
+            <a href="{{ item.url }}">{{ item.label }}</a>
+          {% endfor %}
+        </nav>
+
+        <details class="mobile-nav">
+          <summary>Menu</summary>
+          <nav aria-label="Mobile navigation">
+            {% for item in site.data.navigation %}
+              <a href="{{ item.url }}">{{ item.label }}</a>
+            {% endfor %}
+          </nav>
+        </details>
+      </div>
+    </header>
+
+    <main id="main-content">
+      {{ content }}
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell site-footer__inner">
+        <p class="site-footer__identity">
+          <strong>WoMAPF 2027</strong>
+          <span>8th International Workshop on Multi-Agent Path Finding</span>
+        </p>
+        <nav class="site-footer__archives" id="history" aria-label="Previous workshop editions">
+          <strong>Previous WoMAPF:</strong>
+          <span class="site-footer__archive-links">
+            {% for edition in site.data.past_editions %}
+              <a href="{{ edition.url }}" aria-label="{{ edition.edition }} — {{ edition.context }}">{{ edition.year }}</a>{% unless forloop.last %}<span aria-hidden="true">·</span>{% endunless %}
+            {% endfor %}
+          </span>
+        </nav>
+        <p class="site-footer__meta">
+          <span>AAAI-27 · Montréal, Canada</span>
+          <a href="https://aaai.org/conference/aaai/aaai-27/">Official AAAI-27 website <span aria-hidden="true">↗</span></a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

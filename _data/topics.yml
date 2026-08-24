@@ -1,0 +1,38 @@
+- number: "01"
+  title: Planning methods
+  description: >-
+    Search-, rule-, reduction-, reactive-, and learning-based planners.
+
+- number: "02"
+  title: MAPF variants
+  description: >-
+    Variants and generalizations of the MAPF problem.
+
+- number: "03"
+  title: Integrated planning and execution
+  description: >-
+    MAPF combined with task allocation, scheduling, execution monitoring, and
+    replanning.
+
+- number: "04"
+  title: Uncertainty and failures
+  description: >-
+    Delays, limited communication, dynamic environments, uncertainty, and
+    execution failures.
+
+- number: "05"
+  title: Centralized, decentralized, and learned coordination
+  description: >-
+    Centralized and decentralized MAPF, multi-agent reinforcement learning,
+    and learning-guided coordination.
+
+- number: "06"
+  title: Real robots and applications
+  description: >-
+    Real-world applications and robot-specific kinematic, dynamic, geometric,
+    and safety constraints.
+
+- number: "07"
+  title: Benchmarks and demonstrations
+  description: >-
+    Benchmarks and software or hardware demonstrations of MAPF systems.

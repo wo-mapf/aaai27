@@ -1,0 +1,14 @@
+- label: Dates
+  url: "#dates"
+- label: Contributions
+  url: "#contributions"
+- label: Schedule
+  url: "#schedule"
+- label: Speakers
+  url: "#speakers"
+- label: Panel
+  url: "#panel"
+- label: Organizers
+  url: "#organizers"
+- label: Contact
+  url: "#contact"
