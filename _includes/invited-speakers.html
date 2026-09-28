@@ -1,0 +1,30 @@
+<section class="section section--announcement section--speakers" id="speakers">
+  <div class="shell">
+    <h2 class="about-subtitle">Invited Speakers</h2>
+    <div class="speaker-list">
+      {% for speaker in site.data.speakers %}
+      <article class="speaker-row" aria-label="Invited talk by {{ speaker.name | escape }}">
+        <div class="speaker-profile">
+          {% if speaker.image %}
+          <div class="profile-card__portrait profile-card__portrait--contain {{ speaker.image_class }}">
+            <img src="{{ speaker.image | relative_url }}" alt="{{ speaker.name | escape }}" loading="lazy" width="180" height="180">
+          </div>
+          {% else %}
+          <div class="profile-card__portrait" role="img" aria-label="Portrait of {{ speaker.name | escape }} to be added">
+            <span class="profile-card__initials" aria-hidden="true">{{ speaker.initials }}</span>
+          </div>
+          {% endif %}
+          <div class="profile-card__info">
+            <strong><a href="{{ speaker.url | escape }}" target="_blank" rel="noopener">{{ speaker.name }}</a></strong>
+            <span>{{ speaker.affiliation }}</span>
+          </div>
+        </div>
+        <div class="announcement-card speaker-talk">
+          <h3>{{ speaker.talk_title }}</h3>
+          <p>{{ speaker.abstract }}</p>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>

@@ -20,7 +20,10 @@
 
         <nav class="primary-nav" aria-label="Primary navigation">
           {% for item in site.data.navigation %}
-            <a href="{{ item.url }}">{{ item.label }}</a>
+            <a
+              href="{{ item.url | relative_url }}"
+              {% if page.url == item.url %}class="is-active" aria-current="page"{% endif %}
+            >{{ item.label }}</a>
           {% endfor %}
         </nav>
 
@@ -28,7 +31,10 @@
           <summary>Menu</summary>
           <nav aria-label="Mobile navigation">
             {% for item in site.data.navigation %}
-              <a href="{{ item.url }}">{{ item.label }}</a>
+              <a
+                href="{{ item.url | relative_url }}"
+                {% if page.url == item.url %}class="is-active" aria-current="page"{% endif %}
+              >{{ item.label }}</a>
             {% endfor %}
           </nav>
         </details>

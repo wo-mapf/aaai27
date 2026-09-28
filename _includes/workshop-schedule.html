@@ -1,0 +1,22 @@
+<section class="section section--program" id="schedule">
+  <div class="shell">
+    <h2 class="about-subtitle program-heading">Workshop Schedule</h2>
+
+    <div class="program-grid">
+      {% assign sessions_per_column = site.data.schedule.size | plus: 1 | divided_by: 2 %}
+      {% for column in (0..1) %}
+      {% assign column_offset = column | times: sessions_per_column %}
+      <ol class="program-list" start="{{ column_offset | plus: 1 }}">
+        {% for session in site.data.schedule limit:sessions_per_column offset:column_offset %}
+        <li>
+          <time class="program-list__index" datetime="{{ session.start }}">{{ session.start }}</time>
+          <div>
+            <h3>{{ session.activity | escape }}</h3>
+          </div>
+        </li>
+        {% endfor %}
+      </ol>
+      {% endfor %}
+    </div>
+  </div>
+</section>

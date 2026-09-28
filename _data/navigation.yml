@@ -1,14 +1,8 @@
-- label: Dates
-  url: "#dates"
-- label: Contributions
-  url: "#contributions"
-- label: Schedule
-  url: "#schedule"
-- label: Speakers
-  url: "#speakers"
-- label: Panel
-  url: "#panel"
-- label: Organizers
-  url: "#organizers"
+- label: Home
+  url: "/"
+- label: Program
+  url: "/program/"
+- label: Call for Papers
+  url: "/call/"
 - label: Contact
-  url: "#contact"
+  url: "/organizers/"

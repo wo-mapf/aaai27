@@ -1,0 +1,27 @@
+# Start times and activities from Table 1 of MAPFWorkshop_AAAI27.pdf.
+- start: "08:55"
+  activity: Welcome Talk
+- start: "09:00"
+  activity: Invited Talk 1
+- start: "09:45"
+  activity: Tea Break
+- start: "10:00"
+  activity: Paper Presentation Session 1
+- start: "11:00"
+  activity: Tea Break
+- start: "11:15"
+  activity: Invited Talk 2
+- start: "12:00"
+  activity: Lunch & Poster/Demo Session
+- start: "14:00"
+  activity: Paper Presentation Session 2
+- start: "15:00"
+  activity: Tea Break
+- start: "15:15"
+  activity: Paper Presentation Session 3
+- start: "16:00"
+  activity: Tea Break
+- start: "16:15"
+  activity: Industry Panel Session
+- start: "17:30"
+  activity: Community Discussion & Closing Remarks

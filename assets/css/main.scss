@@ -463,7 +463,6 @@ button:focus-visible {
 
 .about-subtitle,
 .contributions-header h2,
-.program-intro h2,
 .dates-intro h2,
 .announcement-grid h2 {
   margin: 0;
@@ -539,20 +538,13 @@ button:focus-visible {
 
 .program-grid {
   display: grid;
-  grid-template-columns: minmax(0, 0.88fr) minmax(420px, 1.12fr);
-  gap: clamp(60px, 10vw, 145px);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(28px, 5vw, 64px);
   align-items: start;
 }
 
-.program-intro {
-  position: sticky;
-  top: 120px;
-}
-
-.program-intro p:not(.section-kicker) {
-  max-width: 54ch;
-  margin: 25px 0 0;
-  color: rgba(255, 255, 255, 0.62);
+.program-heading {
+  white-space: nowrap;
 }
 
 .program-list {
@@ -566,12 +558,12 @@ button:focus-visible {
   display: grid;
   grid-template-columns: 52px 1fr;
   gap: 22px;
-  padding: 35px 0 38px;
+  padding: 14px 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.16);
 }
 
 .program-list__index {
-  padding-top: 5px;
+  padding-top: 2px;
   color: var(--orange);
   font-size: 0.74rem;
   font-weight: var(--weight-emphasis);
@@ -579,11 +571,11 @@ button:focus-visible {
 }
 
 .program-list h3 {
-  margin: 0 0 8px;
-  font-size: clamp(1.35rem, 2.3vw, 1.8rem);
+  margin: 0;
+  font-size: clamp(1rem, 1.4vw, 1.1rem);
   font-weight: var(--weight-strong);
   letter-spacing: -0.025em;
-  line-height: 1.25;
+  line-height: 1.4;
 }
 
 .program-list p {
@@ -687,6 +679,28 @@ button:focus-visible {
   background: var(--white);
 }
 
+.speaker-list {
+  display: grid;
+  gap: 48px;
+}
+
+.speaker-row {
+  display: grid;
+  grid-template-columns: minmax(180px, 240px) minmax(0, 1fr);
+  align-items: start;
+  gap: clamp(28px, 5vw, 64px);
+}
+
+.speaker-profile a {
+  color: var(--cyan-deep);
+}
+
+.speaker-talk h3 {
+  margin: 0 0 12px;
+  font-size: 1.1rem;
+  line-height: 1.3;
+}
+
 .section--panel {
   border-block: 1px solid var(--line);
   background: var(--paper-deep);
@@ -720,6 +734,10 @@ button:focus-visible {
   max-width: 56ch;
   margin: 0;
   color: var(--muted);
+}
+
+.speaker-talk p {
+  max-width: none;
 }
 
 .announcement-card a {
@@ -780,10 +798,6 @@ button:focus-visible {
   transition: transform 180ms ease, box-shadow 180ms ease;
 }
 
-.profile-grid--advisors .profile-card {
-  max-width: 260px;
-}
-
 a.profile-card:hover {
   box-shadow: 0 8px 20px rgba(10, 32, 43, 0.16);
   transform: translateY(-6px);
@@ -812,6 +826,18 @@ a.profile-card:hover {
 
 .profile-card__portrait--contain img {
   object-fit: contain;
+}
+
+.speaker-portrait--ameya {
+  position: relative;
+}
+
+.speaker-portrait--ameya img {
+  position: absolute;
+  inset: 0;
+  object-fit: cover;
+  transform: scale(1.85);
+  transform-origin: 53% 36%;
 }
 
 .profile-card__initials {
@@ -1042,10 +1068,6 @@ a.profile-card:hover {
     gap: 52px;
   }
 
-  .program-intro {
-    position: static;
-  }
-
 }
 
 @media (max-width: 640px) {
@@ -1093,14 +1115,23 @@ a.profile-card:hover {
     gap: 4px;
   }
 
+  .speaker-row {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
   .profile-grid--organizers .profile-card,
   .profile-grid--advisors .profile-card {
     flex-basis: 100%;
     max-width: 300px;
   }
 
+  .program-heading {
+    font-size: clamp(1.6rem, 8vw, 2.4rem);
+  }
+
   .program-list li {
-    grid-template-columns: 38px 1fr;
+    grid-template-columns: 52px minmax(0, 1fr);
     gap: 12px;
   }
 

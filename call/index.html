@@ -1,0 +1,76 @@
+---
+layout: default
+title: "Call for Papers"
+description: >-
+  Topics and submission guidance for WoMAPF 2027 at AAAI-27.
+image:
+  path: /assets/img/og.png
+  width: 1200
+  height: 630
+  alt: WoMAPF 2027 agents coordinating through shared grid bottlenecks
+---
+
+<section class="section section--scope" id="contributions">
+  <div class="shell">
+    <header class="contributions-header">
+      <h2>Call for Papers</h2>
+      <p class="contributions-intro">
+        We welcome submissions on collision-free path planning, navigation,
+        routing, coordination, and execution for multiple agents, including
+        research papers, position papers, surveys, benchmark reports, and
+        software or hardware demonstrations.
+      </p>
+    </header>
+
+    <div class="contributions-grid">
+      <section class="contribution-topics" aria-labelledby="topics-title">
+        <h3 id="topics-title">Topics</h3>
+        <dl class="submission-details">
+          {% for topic in site.data.topics %}
+            <div>
+              <dt>{{ topic.title }}</dt>
+              <dd>{{ topic.description }}</dd>
+            </div>
+          {% endfor %}
+        </dl>
+      </section>
+    </div>
+  </div>
+</section>
+
+<section class="section section--about" id="authors" aria-labelledby="submission-guidance-title">
+  <div class="shell">
+    <h2 class="about-subtitle" id="submission-guidance-title">Information for Authors</h2>
+    <dl class="submission-details">
+      <div>
+        <dt>Submission site</dt>
+        <dd>To be announced</dd>
+      </div>
+      <div>
+        <dt>Format and length</dt>
+        <dd>To be announced</dd>
+      </div>
+      <div>
+        <dt>Eligible work</dt>
+        <dd>
+          New, ongoing, recently published, or concurrently reviewed work.
+          Prior or concurrent submissions may use their original format or
+          a shorter version but must be clearly labeled and comply with
+          applicable copyright and venue policies.
+        </dd>
+      </div>
+      <div>
+        <dt>Review process</dt>
+        <dd>Light review for quality and relevance; review mode to be announced</dd>
+      </div>
+      <div>
+        <dt>Publication</dt>
+        <dd>Non-archival; online collection details to be announced</dd>
+      </div>
+      <div>
+        <dt>Presentation</dt>
+        <dd>Format and assignment to be announced</dd>
+      </div>
+    </dl>
+  </div>
+</section>

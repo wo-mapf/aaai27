@@ -1,0 +1,94 @@
+---
+layout: default
+title: "Contact"
+description: >-
+  Organizing and advisory committees and contact information for WoMAPF 2027 at AAAI-27.
+image:
+  path: /assets/img/og.png
+  width: 1200
+  height: 630
+  alt: WoMAPF 2027 agents coordinating through shared grid bottlenecks
+---
+
+<section class="section section--organization" id="organizers">
+  <div class="shell">
+    <div class="committee-stack">
+        <section class="committee-contact" id="contact" aria-labelledby="contact-title">
+          <h2 id="contact-title">Contact Us</h2>
+          {% if site.data.organization.contact_email %}
+            <p>For questions or inquiries, please email <a href="mailto:{{ site.data.organization.contact_email }}">{{ site.data.organization.contact_email }}</a>.</p>
+          {% else %}
+            <p class="organization-status">To be announced</p>
+          {% endif %}
+        </section>
+
+        <section class="committee-group" aria-labelledby="organizers-title">
+          <h2 id="organizers-title">Workshop Organizers</h2>
+          {% if site.data.organization.organizers.size > 0 %}
+            <div class="profile-grid profile-grid--organizers">
+              {% for person in site.data.organization.organizers %}
+                {% if person.url %}
+                  <a class="profile-card" href="{{ person.url }}" target="_blank" rel="noopener" aria-label="{{ person.name }} profile">
+                {% else %}
+                  <article class="profile-card">
+                {% endif %}
+                    <span class="profile-card__portrait{% if person.image_fit %} profile-card__portrait--{{ person.image_fit }}{% endif %}">
+                      {% if person.image %}
+                        <img src="{{ person.image | relative_url }}" alt="Portrait of {{ person.name }}" width="180" height="180" loading="lazy">
+                      {% else %}
+                        <span class="profile-card__initials" aria-hidden="true">{{ person.initials }}</span>
+                      {% endif %}
+                    </span>
+                    <span class="profile-card__info">
+                      <strong>{{ person.name }}</strong>
+                      <span>{{ person.affiliation }}</span>
+                      {% if person.note %}<small>{{ person.note }}</small>{% endif %}
+                    </span>
+                {% if person.url %}
+                  </a>
+                {% else %}
+                  </article>
+                {% endif %}
+              {% endfor %}
+            </div>
+          {% else %}
+            <p class="organization-status">{{ site.data.organization.status }}</p>
+          {% endif %}
+        </section>
+
+        <section class="committee-group" id="advisory" aria-labelledby="advisory-title">
+          <h2 id="advisory-title">Advisory Committee</h2>
+          {% if site.data.organization.advisors.size > 0 %}
+            <div class="profile-grid profile-grid--advisors">
+              {% for person in site.data.organization.advisors %}
+                {% if person.url %}
+                  <a class="profile-card" href="{{ person.url }}" target="_blank" rel="noopener" aria-label="{{ person.name }} profile">
+                {% else %}
+                  <article class="profile-card">
+                {% endif %}
+                    <span class="profile-card__portrait{% if person.image_fit %} profile-card__portrait--{{ person.image_fit }}{% endif %}">
+                      {% if person.image %}
+                        <img src="{{ person.image | relative_url }}" alt="Portrait of {{ person.name }}" width="180" height="180" loading="lazy">
+                      {% else %}
+                        <span class="profile-card__initials" aria-hidden="true">{{ person.initials }}</span>
+                      {% endif %}
+                    </span>
+                    <span class="profile-card__info">
+                      <strong>{{ person.name }}</strong>
+                      <span>{{ person.affiliation }}</span>
+                    </span>
+                {% if person.url %}
+                  </a>
+                {% else %}
+                  </article>
+                {% endif %}
+              {% endfor %}
+            </div>
+          {% else %}
+            <p class="organization-status">{{ site.data.organization.status }}</p>
+          {% endif %}
+        </section>
+
+    </div>
+  </div>
+</section>

@@ -1,22 +1,26 @@
 # WoMAPF 2027 workshop website
 
-Initial website for the proposed 8th International Workshop on Multi-Agent
-Path Finding, submitted for consideration at AAAI-27.
+Website for the 8th International Workshop on Multi-Agent Path Finding,
+accepted as an AAAI-27 workshop in Montréal, Canada.
 
-The public page intentionally distinguishes confirmed conference facts from
-workshop details that depend on the proposal decision. Do not replace a “To be
-announced” value with a date, speaker, policy, or venue until it is confirmed.
+Workshop acceptance is confirmed. Dates, speakers, and other details still
+being finalized remain marked “To be announced” until confirmed.
 
 ## Editing the site
 
 Most routine updates are separated from the layout:
 
 - `_config.yml`: site title, description, public URL, and GitHub Pages base path
-- `_data/dates.yml`: proposal status and important dates
+- `_data/dates.yml`: important dates
 - `_data/topics.yml`: research-scope cards
 - `_data/past_editions.yml`: links to previous workshop websites
 - `_data/organization.yml`: organizers, advisors, and contact address
-- `index.html`: section copy and tentative program description
+- `_data/speakers.yml`: invited speaker profiles, talk titles, and abstracts
+- `_data/schedule.yml`: workshop session start times and activities
+- `index.html`: workshop overview, scope, and important dates
+- `program/index.html`: schedule, speakers, and panel discussion
+- `call/index.html`: topics and submission guidance
+- `organizers/index.html`: organizers, advisory committee, and contact
 - `assets/css/main.scss`: visual design and responsive behavior
 
 To add an organizer after confirmation:
@@ -49,14 +53,10 @@ serve the generated site at the configured project path.
 
 ## Design decision
 
-The implementation uses a small, self-contained Jekyll structure instead of a
-large conference theme. We evaluated the actively maintained
-`jekyll-theme-conference`, but its schedule, speaker, room, streaming, and PWA
-features are unnecessary while the proposal is pending. The current structure
-keeps the initial page easy to edit and can be expanded into dedicated program,
-speaker, and paper pages after acceptance.
+The implementation uses a small, self-contained Jekyll structure with separate
+Home, Program, Call for Papers, and Contact pages. Shared navigation,
+layout, and data files keep the site easy to edit as workshop details are finalized.
 
 The information architecture was informed by the WoMAPF 2025 and 2026 sites,
-with improvements for proposal status, mobile navigation, semantic headings,
+with improvements for mobile navigation, semantic headings,
 keyboard focus, compact content, and series history.
-

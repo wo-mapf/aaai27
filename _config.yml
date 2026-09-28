@@ -1,8 +1,8 @@
 title: "WoMAPF 2027"
 tagline: "8th International Workshop on Multi-Agent Path Finding"
 description: >-
-  Proposed 8th International Workshop on Multi-Agent Path Finding,
-  submitted for consideration at AAAI-27 in Montréal, Canada.
+  8th International Workshop on Multi-Agent Path Finding
+  at AAAI-27 in Montréal, Canada.
 url: "https://wo-mapf.github.io"
 baseurl: "/aaai27"
 repository: "wo-mapf/aaai27"
@@ -23,4 +23,3 @@ exclude:
   - Gemfile.lock
   - README.md
   - vendor
-
