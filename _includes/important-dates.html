@@ -1,0 +1,26 @@
+<section class="section section--dates" id="dates">
+  <div class="shell dates-grid">
+    <div class="dates-intro">
+      <h2>Important Dates</h2>
+      <p>
+        Find submission, notification, registration, camera-ready, and workshop
+        dates here.
+      </p>
+      <p>
+        Check <a class="text-link" href="{{ include.details_url | default: '/call/' | relative_url }}">{{ include.details_label | default: 'Call for Papers' }}</a>
+        for more details.
+      </p>
+    </div>
+
+    <dl class="date-list">
+      {% for item in site.data.dates %}
+        <div class="date-row date-row--{{ item.state }}">
+          <dt>{{ item.label }}</dt>
+          <dd>
+            <strong>{{ item.value }}</strong>
+          </dd>
+        </div>
+      {% endfor %}
+    </dl>
+  </div>
+</section>
