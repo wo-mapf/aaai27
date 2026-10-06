@@ -503,6 +503,22 @@ button:focus-visible {
   margin: 0;
 }
 
+.cmt-acknowledgment {
+  margin-top: 24px;
+  color: var(--muted);
+  font-size: 0.75rem;
+  line-height: 1.5;
+}
+
+.cmt-acknowledgment h3 {
+  margin: 0 0 6px;
+  font-size: inherit;
+}
+
+.cmt-acknowledgment p {
+  margin: 0;
+}
+
 .submission-details {
   margin: 20px 0 0;
   border-top: 1px solid var(--line);

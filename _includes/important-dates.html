@@ -15,9 +15,9 @@
     <dl class="date-list">
       {% for item in site.data.dates %}
         <div class="date-row date-row--{{ item.state }}">
-          <dt>{{ item.label }}</dt>
+          <dt>{% if item.state == 'past' %}<s>{{ item.label }}</s>{% else %}{{ item.label }}{% endif %}</dt>
           <dd>
-            <strong>{{ item.value }}</strong>
+            <strong>{% if item.state == 'past' %}<s>{{ item.value }}</s>{% else %}{{ item.value }}{% endif %}</strong>
           </dd>
         </div>
       {% endfor %}

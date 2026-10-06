@@ -4,13 +4,13 @@ organizers:
     role: Ph.D. candidate
     affiliation: Monash University
     note: Corresponding organizer
-    url: https://pathfinding.ai/team/yue-zhang/
+    url: https://scholar.google.com/citations?user=LR9bzj4AAAAJ
     image: /assets/img/people/yue-zhang.jpg
   - name: Yifei Kou
     role: Graduate student
     affiliation: Rutgers University
     url: https://www.cs.rutgers.edu/people/graduate-students/details/yifei-kou
-    initials: YK
+    image: /assets/img/people/yifei-kou.jpg
   - name: Jingtao Tang
     role: Ph.D. candidate
     affiliation: Simon Fraser University
@@ -26,24 +26,24 @@ advisors:
   - name: Daniel Harabor
     role: Associate Professor
     affiliation: Monash University
-    url: https://research.monash.edu/en/persons/daniel-harabor/
+    url: https://harabor.net/daniel/
     image: /assets/img/people/daniel-harabor.jpg
   - name: Jingjin Yu
     role: Associate Professor
     affiliation: Rutgers University
-    url: https://www.cs.rutgers.edu/people/professors/details/jingjin-yu
+    url: https://jingjinyu.com/
     image: /assets/img/people/jingjin-yu.png
   - name: Hang Ma
     role: Assistant Professor
     affiliation: Simon Fraser University
-    url: https://www.sfu.ca/fas/computing/people/faculty/faculty-members/hangma.html
+    url: https://www2.cs.sfu.ca/~hangma/
     image: /assets/img/people/hang-ma.jpg
     image_fit: contain
 
   - name: Jiaoyang Li
     role: Assistant Professor
     affiliation: Carnegie Mellon University
-    url: https://www.ri.cmu.edu/ri-faculty/jiaoyang-li/
+    url: https://jiaoyangli.me/
     image: /assets/img/people/jiaoyang-li.png
     image_fit: contain
 
