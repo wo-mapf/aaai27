@@ -5,14 +5,18 @@
 - label: Paper Submission Deadline
   value: Nov. 20, 2026
   state: confirmed
+  link_text: Submit via Microsoft CMT
+  url: https://cmt3.research.microsoft.com/WoMAPF2027
 
 - label: Notifications Sent to Authors
   value: Dec. 2, 2026
   state: confirmed
 
 - label: AAAI-27 Early Registration Deadline
-  value: To be announced
-  state: pending
+  value: Dec. 15, 2026, at 11:59 p.m. Eastern
+  state: confirmed
+  link_text: AAAI registration
+  url: https://aaai.org/conference/aaai/aaai-27/aaai-27-registration/
 
 - label: Camera Ready Deadline for Submitted Papers
   value: To be announced

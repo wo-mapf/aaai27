@@ -707,8 +707,10 @@ button:focus-visible {
   gap: clamp(28px, 5vw, 64px);
 }
 
-.speaker-profile a {
+.speaker-profile a,
+.profile-grid--panelists .profile-card__info strong {
   color: var(--cyan-deep);
+  text-decoration: underline;
 }
 
 .speaker-talk h3 {
@@ -799,6 +801,14 @@ button:focus-visible {
   gap: 20px;
 }
 
+.profile-grid--panelists .profile-card {
+  max-width: 280px;
+}
+
+.profile-grid--panelists .profile-card__info {
+  margin-top: 0;
+}
+
 .profile-card {
   display: flex;
   flex: 1 1 0;
@@ -854,6 +864,11 @@ a.profile-card:hover {
   object-fit: cover;
   transform: scale(1.85);
   transform-origin: 53% 36%;
+}
+
+.speaker-portrait--oren {
+  grid-template: 90% / 90%;
+  place-content: center;
 }
 
 .profile-card__initials {
@@ -1071,6 +1086,7 @@ a.profile-card:hover {
     flex-wrap: wrap;
   }
 
+  .profile-grid--panelists .profile-card,
   .profile-grid--organizers .profile-card,
   .profile-grid--advisors .profile-card {
     flex: 0 1 calc(33.333% - 14px);
@@ -1136,6 +1152,7 @@ a.profile-card:hover {
     gap: 24px;
   }
 
+  .profile-grid--panelists .profile-card,
   .profile-grid--organizers .profile-card,
   .profile-grid--advisors .profile-card {
     flex-basis: 100%;

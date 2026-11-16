@@ -1,0 +1,18 @@
+<section class="section section--announcement section--panel" id="panel" aria-labelledby="panel-title">
+  <div class="shell">
+    <h2 class="about-subtitle" id="panel-title">Industry Panel</h2>
+    <div class="profile-grid profile-grid--panelists">
+      {% for person in site.data.panelists %}
+        <a class="profile-card" href="{{ person.url | escape }}" target="_blank" rel="noopener">
+          <span class="profile-card__portrait">
+            <img src="{{ person.image | relative_url }}" alt="" width="180" height="180" loading="lazy">
+          </span>
+          <span class="profile-card__info">
+            <strong>{{ person.name }}</strong>
+            <span>{{ person.affiliation }}</span>
+          </span>
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>

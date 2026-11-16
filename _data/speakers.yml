@@ -6,3 +6,12 @@
   affiliation: Research Scientist, Amazon
   talk_title: Talk title to be announced
   abstract: Abstract to be announced.
+
+- name: Oren Salzman
+  url: https://scholar.google.com/citations?hl=en&user=wCNY8ZYAAAAJ
+  initials: OS
+  image: /assets/img/people/oren-salzman.jpg
+  image_class: speaker-portrait--oren
+  affiliation: Associate Professor, Technion – Israel Institute of Technology
+  talk_title: Talk title to be announced
+  abstract: Abstract to be announced.
